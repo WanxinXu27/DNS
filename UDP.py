@@ -6,9 +6,8 @@ def ReceiveQuery():
     print( "The server is ready to receive")
     while True:
         message, clientAddress = serverSocket.recvfrom(2048)
-        print(message)
         modifiedMessage = SendQueryToResolver(message)
-        serverSocket.sendto(modifiedMessage.encode(), clientAddress)
+        serverSocket.sendto(modifiedMessage, clientAddress)
 
 
 
@@ -16,7 +15,7 @@ def SendQueryToResolver(message):
     serverName = "8.8.8.8"
     serverPort = 53
     clientSocket = socket(AF_INET, SOCK_DGRAM)
-    clientSocket.sendto(message.encode(), (serverName, serverPort))
+    clientSocket.sendto(message, (serverName, serverPort))
     modifiedMessage, serverAddress = clientSocket.recvfrom(2048)
     clientSocket.close()
     return modifiedMessage

@@ -7,6 +7,9 @@ def ReceiveQuery():
     while True:
         message, clientAddress = serverSocket.recvfrom(2048)
         modifiedMessage = SendQueryToResolver(message)
+        flag = modifiedMessage[2:4]
+        flag =''.join(format(ord(x), 'b') for x in flag)
+        print flag
         serverSocket.sendto(modifiedMessage, clientAddress)
 
 

@@ -1,17 +1,34 @@
 from socket import *
 def ReceiveQuery():
-    serverPort = 53
-    serverSocket = socket(AF_INET, SOCK_DGRAM)
-    serverSocket.bind(('',serverPort))
+    serverPort_UDP = 53
+    serverSocket_UDP = socket(AF_INET, SOCK_DGRAM)
+    serverSocket_UDP.bind(('',serverPort_UDP))
+
+    serverPort_TCP = 53
+    serverSocket_TCP = socket(AF_INET, SOCK_STREAM)
+    serverSocket_TCP.bind(('', serverPort_TCP))
+    serverSocket_TCP.listen(1)
+
     print( "The server is ready to receive")
     while True:
-        message, clientAddress = serverSocket.recvfrom(2048)
+
+        message, clientAddress = serverSocket_UDP.recvfrom(2048)
         response, trunc = UDP_SendQueryToResolver(message)
         print "trunc" + str(trunc)
-        if trunc == False:
-            serverSocket.sendto(response, clientAddress)
-        else:
+        serverSocket_UDP.sendto(response, clientAddress)
+        if trunc == True:
+            # serverPort_TCP = 53
+            # serverSocket_TCP = socket(AF_INET,SOCK_STREAM)
+            # serverSocket_TCP.bind(('',serverPort_TCP))
+            # serverSocket_TCP.listen(1)
+            print 'The TCP server is ready to receive'
+            connectionSocket,addr = serverSocket_TCP.accept()
+            print str(connectionSocket)
+            message = connectionSocket.recv(2048)
             response = TCP_SendQueryToResolver(message)
+            print response
+            connectionSocket.send(response)
+            connectionSocket.close()
 
 
 
@@ -21,8 +38,6 @@ def UDP_SendQueryToResolver(message):
     serverPort = 53
     clientSocket = socket(AF_INET, SOCK_DGRAM)
     clientSocket.sendto(message, (serverName, serverPort))
-    # print message
-    # print "receive from 8.8.8.8:"
     response, serverAddress = clientSocket.recvfrom(2048)
     flag = response[2:4]
     flag = ''.join(format(ord(x), 'b') for x in flag)
@@ -39,10 +54,7 @@ def TCP_SendQueryToResolver(message):
     clientSocket = socket(AF_INET, SOCK_STREAM)
     clientSocket.connect((serverName, serverPort))
     clientSocket.send(message)
-    # print message
-    # print "receive from 8.8.8.8:"
     response = clientSocket.recv(2048)
-    print response
     clientSocket.close()
     return response
 

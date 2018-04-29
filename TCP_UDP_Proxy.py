@@ -25,7 +25,7 @@ def ReceiveQuery():
             connectionSocket, addr = serverSocket_TCP.accept()
             print 'The TCP server is ready to receive'
             message = connectionSocket.recv(2048)
-            response = TCP_SendQueryToResolver(message)i
+            response = TCP_SendQueryToResolver(message)
             print len(response)
             connectionSocket.send(response)
             print 'TCP response sent.'

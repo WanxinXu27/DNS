@@ -1,4 +1,8 @@
+#!/usr/bin/python
+
 from socket import *
+
+
 def ReceiveQuery():
     serverPort = 53
     serverSocket = socket(AF_INET, SOCK_DGRAM)
@@ -7,11 +11,8 @@ def ReceiveQuery():
     while True:
         message, clientAddress = serverSocket.recvfrom(2048)
         modifiedMessage = SendQueryToResolver(message)
-        flag = modifiedMessage[2:4]
-        flag =''.join(format(ord(x), 'b') for x in flag)
-        print flag
         serverSocket.sendto(modifiedMessage, clientAddress)
-
+        print 'UDP response sent.'
 
 
 def SendQueryToResolver(message):
@@ -22,6 +23,7 @@ def SendQueryToResolver(message):
     modifiedMessage, serverAddress = clientSocket.recvfrom(2048)
     clientSocket.close()
     return modifiedMessage
+
 
 if __name__ == "__main__":
     ReceiveQuery()

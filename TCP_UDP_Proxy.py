@@ -1,4 +1,8 @@
+#!/usr/bin/python
+
 from socket import *
+
+
 def ReceiveQuery():
     serverPort_UDP = 53
     serverSocket_UDP = socket(AF_INET, SOCK_DGRAM)
@@ -14,16 +18,17 @@ def ReceiveQuery():
 
         message, clientAddress = serverSocket_UDP.recvfrom(2048)
         response, trunc = UDP_SendQueryToResolver(message)
+        print len(response)
         serverSocket_UDP.sendto(response, clientAddress)
-        # print "trunc" + str(trunc)
+        print 'UDP response sent.'
         if trunc:
             connectionSocket, addr = serverSocket_TCP.accept()
             print 'The TCP server is ready to receive'
-            # print str(connectionSocket)
             message = connectionSocket.recv(2048)
-            response = TCP_SendQueryToResolver(message)
+            response = TCP_SendQueryToResolver(message)i
             print len(response)
             connectionSocket.send(response)
+            print 'TCP response sent.'
             connectionSocket.close()
 
 

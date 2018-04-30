@@ -29,7 +29,7 @@ def response(sentence):  # generate http response message
     res = 'HTTP/1.0 200 OK\r\nConnection: close\r\n'
     hostname = parse(sentence)
     body = '<!DOCTYPE html>\n<html>\n<body>\n<p>I see you were looking for ' + hostname
-    body += ', but come to here for a try: <a href="amazon.com">link</a>.</p>\n</body>\n</html>'
+    body += ', but come to here for a try: <a href="https://www.amazon.com">link</a>.</p>\n</body>\n</html>'
     res += 'Content-Length: ' + str(len(body))
     res += '\r\nContent-Type: text/html\r\n\r\n'
     res += body

@@ -3,6 +3,16 @@
 from socket import *
 
 
+def print_hex(response):  # debug purpose
+    response = response.encode('hex')
+    res = ''
+    for i in range(len(response)):
+        res += response[i]
+        if i % 2:
+            res += ' '
+    return res
+
+
 def change_ancount(response):  # answer RRs 0 -> 1
     res1 = response[0: 7]
     res3 = response[8:]
@@ -80,13 +90,13 @@ def ReceiveQuery():
 
         message, clientAddress = serverSocket_UDP.recvfrom(2048)
         response = UDP_SendQueryToResolver(message)
-        print 'original response = ' + response.encode('hex')
+        print 'original response = ' + print_hex(response)
         trunc, nerr = check_flags(response)
         print 'nerr = ' + str(nerr)
         print len(response)
         if nerr:
             response = fabricate(response)
-            print 'fabricated response = ' + response.encode('hex')
+            print 'fabricated response = ' + print_hex(response)
         serverSocket_UDP.sendto(response, clientAddress)
         print 'UDP response sent.'
         if trunc:

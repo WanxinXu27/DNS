@@ -3,15 +3,23 @@
 from socket import *
 
 
-def change_flag(response):  # change RCODE to 0000
-    res1 = response[0: 2]
-    res2 = get_flags(response)  # flags in binary
+def change_ancount(response):  # answer RRs 0 -> 1
+    res1 = response[0: 7]
+    res3 = response[8:]
+    res2 = chr(1)
+    res = res1 + res2 + res3
+    return res
+
+
+def change_flag(response):  # RCODE -> 0000
+    res1 = response[0: 3]
+    res2 = response[3]
     res3 = response[4:]
-    temp = list(res2)
-    temp[-1] = '0'  # change RCODE to 0000
-    res2 = ''.join(temp)
-    response = res1 + res2 + res3
-    return response
+    value = ord(res2)
+    value -= 3
+    res2 = chr(value)
+    res = res1 + res2 + res3
+    return res
 
 
 def receive(socket):
@@ -26,20 +34,20 @@ def receive(socket):
 
 def fabricate(response):
     response = change_flag(response)
+    response = change_ancount(response)
     pos = 0
     for i in range(len(response)):
         if response[i].encode('hex') == 'c0':
             pos = i
             break
     start = response[0: pos]
-    ans = 'c00c000100010000001a000412de3b96'
-    ans = ans.decode('hex')
-    response = start + ans
-    return response
+    ans = '\xc0\x0c\x00\x01\x00\x01\x00\x00\x00\x1a\x00\x04\x12\xde\x3b\x96'
+    res = start + str(ans)
+    return res
 
 
 def check_flags(response):
-    flag = get_flags(response)
+    flag = get_flags_binary(response)
     if flag[6] == '1':
         trunc = True
     else:
@@ -51,7 +59,7 @@ def check_flags(response):
     return trunc, nerr
 
 
-def get_flags(response):
+def get_flags_binary(response):  # convert flag string to binary string
     flag = response[2:4]
     flag = ''.join(format(ord(x), 'b') for x in flag)
     return flag
@@ -72,11 +80,13 @@ def ReceiveQuery():
 
         message, clientAddress = serverSocket_UDP.recvfrom(2048)
         response = UDP_SendQueryToResolver(message)
+        print 'original response = ' + response.encode('hex')
         trunc, nerr = check_flags(response)
+        print 'nerr = ' + str(nerr)
         print len(response)
         if nerr:
             response = fabricate(response)
-            print response
+            print 'fabricated response = ' + response.encode('hex')
         serverSocket_UDP.sendto(response, clientAddress)
         print 'UDP response sent.'
         if trunc:

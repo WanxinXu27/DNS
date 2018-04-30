@@ -13,6 +13,14 @@ def print_hex(response):  # debug purpose
     return res
 
 
+def change_nscount(responce):
+    res1 = responce[0: 9]
+    res3 = responce[10:]
+    res2 = chr(0)
+    res = res1 + res2 + res3
+    return res
+
+
 def change_ancount(response):  # answer RRs 0 -> 1
     res1 = response[0: 7]
     res3 = response[8:]
@@ -45,6 +53,7 @@ def receive(socket):
 def fabricate(response):
     response = change_flag(response)
     response = change_ancount(response)
+    response = change_nscount(response)
     pos = 0
     for i in range(len(response)):
         if response[i].encode('hex') == 'c0':

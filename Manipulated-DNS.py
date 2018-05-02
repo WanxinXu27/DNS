@@ -1,5 +1,6 @@
 #!/usr/bin/python
 
+from urllib2 import urlopen
 from socket import *
 
 
@@ -50,6 +51,15 @@ def receive(socket):
     return response
 
 
+def get_ip():
+    ip = urlopen('http://ip.42.pl/raw').read()
+    ip = ip.split('.')
+    ip_hex = ''
+    for i in ip:
+        ip_hex += chr(int(i))
+    return ip_hex
+
+
 def fabricate(response):
     response = change_flag(response)
     response = change_ancount(response)
@@ -60,8 +70,11 @@ def fabricate(response):
             pos = i
             break
     start = response[0: pos]
-    ans = '\xc0\x0c\x00\x01\x00\x01\x00\x00\x00\x1a\x00\x04\x12\xde\x3b\x96'
-    res = start + str(ans)
+    # ans = '\xc0\x0c\x00\x01\x00\x01\x00\x00\x00\x1a\x00\x04\x12\xde\x3b\x96'
+    ans = '\xc0\x0c\x00\x01\x00\x01\x00\x00\x00\x1a\x00\x04'
+    ip = get_ip()
+    ans += ip
+    res = start + ans
     return res
 
 

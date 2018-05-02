@@ -1,7 +1,5 @@
 #!/usr/bin/python
 import socket
-import os.path
-import sys
 
 
 def get_request(socket):  # Receive the request from the client
@@ -16,20 +14,11 @@ def get_request(socket):  # Receive the request from the client
     return rqst
 
 
-# def load_file(file_path):  # extract file content
-#     f = open(file_path, 'r')
-#     res = ''
-#     for line in f:
-#         res += line
-#     f.close()
-#     return res
-
-
 def response(sentence):  # generate http response message
     res = 'HTTP/1.0 200 OK\r\nConnection: close\r\n'
     hostname = parse(sentence)
     body = '<!DOCTYPE html>\n<html>\n<body>\n<p>I see you were looking for ' + hostname
-    body += ', but come to here for a try: <a href="https://www.amazon.com">link</a>.</p>\n</body>\n</html>'
+    body += ', try this instead: <a href="http://stevetarzia.com">link</a>.</p>\n</body>\n</html>'
     res += 'Content-Length: ' + str(len(body))
     res += '\r\nContent-Type: text/html\r\n\r\n'
     res += body

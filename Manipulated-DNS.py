@@ -70,7 +70,6 @@ def fabricate(response):
             pos = i
             break
     start = response[0: pos]
-    # ans = '\xc0\x0c\x00\x01\x00\x01\x00\x00\x00\x1a\x00\x04\x12\xde\x3b\x96'
     ans = '\xc0\x0c\x00\x01\x00\x01\x00\x00\x00\x1a\x00\x04'
     ip = get_ip()
     ans += ip
@@ -107,28 +106,28 @@ def ReceiveQuery():
     serverSocket_TCP.bind(('', serverPort_TCP))
     serverSocket_TCP.listen(1)
 
-    print("The server is ready to receive")
+    print "The server is ready to receive"
     while True:
 
         message, clientAddress = serverSocket_UDP.recvfrom(2048)
         response = UDP_SendQueryToResolver(message)
         print 'original response = ' + print_hex(response)
         trunc, nerr = check_flags(response)
-        print 'nerr = ' + str(nerr)
-        print len(response)
         if nerr:
+            print 'name error detected!'
             response = fabricate(response)
             print 'fabricated response = ' + print_hex(response)
         serverSocket_UDP.sendto(response, clientAddress)
-        print 'UDP response sent.'
+        print 'UDP response sent.\n'
         if trunc:
             connectionSocket, addr = serverSocket_TCP.accept()
             print 'The TCP server is ready to receive'
             message = connectionSocket.recv(2048)
+            print 'message = ' + print_hex(message)
             response = TCP_SendQueryToResolver(message)
-            print len(response)
             connectionSocket.send(response)
-            print 'TCP response sent.'
+            print 'response = ' + print_hex(response)
+            print 'TCP response sent.\n'
             connectionSocket.close()
 
 
@@ -142,13 +141,27 @@ def UDP_SendQueryToResolver(message):
     return response
 
 
+#def TCP_SendQueryToResolver(message):
+ #   serverName = "8.8.8.8"
+  #  serverPort = 53
+   # clientSocket = socket(AF_INET, SOCK_STREAM)
+    #clientSocket.connect((serverName, serverPort))
+   # clientSocket.send(message)
+   # response = receive(clientSocket)
+   # clientSocket.close()
+   # return response
 def TCP_SendQueryToResolver(message):
     serverName = "8.8.8.8"
     serverPort = 53
     clientSocket = socket(AF_INET, SOCK_STREAM)
     clientSocket.connect((serverName, serverPort))
     clientSocket.send(message)
-    response = receive(clientSocket)
+    response = ''
+    while True:
+        res = clientSocket.recv(2048)
+        if not res:
+            break
+        response += res
     clientSocket.close()
     return response
 

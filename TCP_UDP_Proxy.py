@@ -13,12 +13,11 @@ def ReceiveQuery():
     serverSocket_TCP.bind(('', serverPort_TCP))
     serverSocket_TCP.listen(1)
 
-    print("The server is ready to receive")
+    print "The server is ready to receive"
     while True:
 
         message, clientAddress = serverSocket_UDP.recvfrom(2048)
         response, trunc = UDP_SendQueryToResolver(message)
-        print len(response)
         serverSocket_UDP.sendto(response, clientAddress)
         print 'UDP response sent.'
         if trunc:
@@ -26,7 +25,6 @@ def ReceiveQuery():
             print 'The TCP server is ready to receive'
             message = connectionSocket.recv(2048)
             response = TCP_SendQueryToResolver(message)
-            print len(response)
             connectionSocket.send(response)
             print 'TCP response sent.'
             connectionSocket.close()

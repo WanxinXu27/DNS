@@ -26,6 +26,7 @@ def response(sentence):  # generate http response message
 
 
 def parse(sentence):  # parse http request and return the hostname
+    hostname = ''
     temp = sentence.split('\r\n')
     for i in temp:
         temp2 = i.split(': ')[0]

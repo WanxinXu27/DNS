@@ -1,0 +1,1308 @@
+
+<!DOCTYPE html>
+<html class="scripts-not-loaded" dir="ltr"   lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Project 2</title>
+  <!--[if lte IE 9]> <meta http-equiv=refresh content="0; URL=/ie-9-is-not-supported.html" /> <![endif]-->
+  <link rel="shortcut icon" type="image/x-icon" href="https://instructure-uploads.s3.amazonaws.com/account_18760000000000001/attachments/1377398/CanvasPurpleFavicon.ico?AWSAccessKeyId=AKIAJFNFXH2V2O7RPCAA&amp;Expires=1914480818&amp;Signature=wEj831yFgr6S79O2Ey2V9MTm5FE%3D&amp;response-cache-control=Cache-Control%3Amax-age%3D473364000%2C%20public&amp;response-expires=473364000" />
+  <link rel="apple-touch-icon" href="https://instructure-uploads.s3.amazonaws.com/account_18760000000000001/attachments/1377399/northwestern_mobile_homescreen_icon.png?AWSAccessKeyId=AKIAJFNFXH2V2O7RPCAA&amp;Expires=1914480818&amp;Signature=xwplmIBIZGxkAv%2BqSdYU9dkD5B0%3D&amp;response-cache-control=Cache-Control%3Amax-age%3D473364000%2C%20public&amp;response-expires=473364000" />
+  
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/f0b03ebcc9d5705ce5d1cdd687f8bf5b/variables-750d72b9d3e5d522f965bf904110c132.css" />
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/common-ba7a744043.css" />
+  <script>
+//<![CDATA[
+
+!function(){
+  function get(u){document.write('<scr'+'ipt src="'+ u +'"></sc'+'ript>')}
+  var o,s,v;
+  if (!(window.Promise && Object.assign && Object.values && [].find && [].includes && (o={},s=Symbol(),v={},o[s]=v,o[s]===v) && (function f(){}).bind().name==='bound f')) {
+    get("https://du11hjcvx0uqb.cloudfront.net/dist/ie11-polyfill-eaf1bda494.js");
+  }
+  window.fetch || get("https://cdnjs.cloudflare.com/ajax/libs/fetch/2.0.4/fetch.min.js");
+}();
+      
+//]]>
+</script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/lato-fontfaceobserver-c00bea249f.js" async="async"></script>
+  
+  <meta name="apple-itunes-app" content="app-id=480883488" />
+<link rel="manifest" href="/web-app-manifest/manifest.json" />
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#008EE2">
+  <link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/assignments-0e191b779e.css" />
+<link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/tinymce-cfde159ef1.css" />
+<link rel="stylesheet" media="all" href="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/learning_outcomes-f21c51d0f3.css" />
+  
+  
+  <script>
+    function _earlyClick(e){
+      var c = e.target
+      while (c && c.ownerDocument) {
+        if (c.getAttribute('href') == '#' || c.getAttribute('data-method')) {
+          e.preventDefault()
+          (_earlyClick.clicks = _earlyClick.clicks || []).push(c)
+          break
+        }
+        c = c.parentNode
+      }
+    }
+    document.addEventListener('click', _earlyClick)
+  </script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/f0b03ebcc9d5705ce5d1cdd687f8bf5b/variables-750d72b9d3e5d522f965bf904110c132.js" defer="defer"></script>
+  <script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/vendor.bundle-fed7cd2b19.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/America/Chicago-72c98a0d42.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/timezone/en_US-80a0ce259b.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/appBootstrap.bundle-07d79b9fbb.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/common.bundle-392a9668bb.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/assignment_show.bundle-dd9bd03136.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/submit_assignment.bundle-be0d11e4f3.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/group_submission_reminder.bundle-f4a18f1b5f.js" defer="defer"></script>
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/edit_rubric.bundle-588c8fa0e0.js" defer="defer"></script>
+</head>
+
+<body class="with-left-side course-menu-expanded with-right-side assignments primary-nav-expanded context-course_72921 lato-font-not-loaded-yet">
+
+<noscript>
+  <div role="alert" class="ic-flash-static ic-flash-error">
+    <div class="ic-flash__icon" aria-hidden="true">
+      <i class="icon-warning"></i>
+    </div>
+    <h1>You need to have JavaScript enabled in order to access this site.</h1>
+  </div>
+</noscript>
+
+
+
+
+
+<ul id="flash_message_holder"></ul>
+<div id="flash_screenreader_holder"></div>
+
+<div id="application" class="ic-app">
+  
+  <header id="header" class="ic-app-header no-print ">
+    <a href="#content" id="skip_navigation_link">Skip To Content</a>
+      <div role="region" class="ic-app-header__main-navigation" aria-label="Global Navigation">
+        <div class="ic-app-header__logomark-container">
+          <a href="https://canvas.northwestern.edu/" class="ic-app-header__logomark">
+            <span class="screenreader-only">Dashboard</span>
+          </a>
+        </div>
+        <ul id="menu" class="ic-app-header__menu-list">
+            <li class="menu-item ic-app-header__menu-list-item ">
+              <a id="global_nav_profile_link" href="/profile" class="ic-app-header__menu-list-link">
+                <div class="menu-item-icon-container" aria-hidden="true">
+                  <div class="ic-avatar ">
+                    <img src="https://canvas.northwestern.edu/images/thumbnails/4943389/wfRrgpCBVthYt0Pj230B0YMcXnkBT92nrPlUX1FI" alt="Yifei Deng" />
+                  </div>
+                </div>
+                <div class="menu-item__text">
+                  Account
+                </div>
+              </a>
+            </li>
+          <li class="ic-app-header__menu-list-item ">
+            <a id="global_nav_dashboard_link" href="https://canvas.northwestern.edu/" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--dashboard" version="1.1" x="0" y="0" viewBox="0 0 280 200" enable-background="new 0 0 280 200" xml:space="preserve"><path d="M273.09,180.75H197.47V164.47h62.62A122.16,122.16,0,1,0,17.85,142a124,124,0,0,0,2,22.51H90.18v16.29H6.89l-1.5-6.22A138.51,138.51,0,0,1,1.57,142C1.57,65.64,63.67,3.53,140,3.53S278.43,65.64,278.43,142a137.67,137.67,0,0,1-3.84,32.57ZM66.49,87.63,50.24,71.38,61.75,59.86,78,76.12Zm147,0L202,76.12l16.25-16.25,11.51,11.51ZM131.85,53.82v-23h16.29v23Zm15.63,142.3a31.71,31.71,0,0,1-28-16.81c-6.4-12.08-15.73-72.29-17.54-84.25a8.15,8.15,0,0,1,13.58-7.2c8.88,8.21,53.48,49.72,59.88,61.81a31.61,31.61,0,0,1-27.9,46.45ZM121.81,116.2c4.17,24.56,9.23,50.21,12,55.49A15.35,15.35,0,1,0,161,157.3C158.18,152,139.79,133.44,121.81,116.2Z" /></svg>
+
+              </div>
+              <div class="menu-item__text">Dashboard</div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ic-app-header__menu-list-item--active">
+            <a id="global_nav_courses_link" href="/courses" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--courses" version="1.1" x="0" y="0" viewBox="0 0 280 259" enable-background="new 0 0 280 259" xml:space="preserve"><path d="M73.31,198c-11.93,0-22.22,8-24,18.73a26.67,26.67,0,0,0-.3,3.63v.3a22,22,0,0,0,5.44,14.65,22.47,22.47,0,0,0,17.22,8H200V228.19h-134V213.08H200V198Zm21-105.74h90.64V62H94.3ZM79.19,107.34V46.92H200v60.42Zm7.55,30.21V122.45H192.49v15.11ZM71.65,16.71A22.72,22.72,0,0,0,49,39.36V190.88a41.12,41.12,0,0,1,24.32-8h157V16.71ZM33.88,39.36A37.78,37.78,0,0,1,71.65,1.6H245.36V198H215.15v45.32h22.66V258.4H71.65a37.85,37.85,0,0,1-37.76-37.76Z"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Courses
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_calendar_link" href="/calendar" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--calendar" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M197.07,213.38h16.31V197.07H197.07Zm-16.31,16.31V180.76h48.92v48.92Zm-48.92-16.31h16.31V197.07H131.85Zm-16.31,16.31V180.76h48.92v48.92ZM66.62,213.38H82.93V197.07H66.62ZM50.32,229.68V180.76H99.24v48.92Zm146.75-81.53h16.31V131.85H197.07Zm-16.31,16.31V115.54h48.92v48.92Zm-48.92-16.31h16.31V131.85H131.85Zm-16.31,16.31V115.54h48.92v48.92ZM66.62,148.15H82.93V131.85H66.62ZM50.32,164.46V115.54H99.24v48.92ZM34,262.29H246V82.93H34ZM246,66.62V42.16A8.17,8.17,0,0,0,237.84,34H213.38v8.15a8.15,8.15,0,1,1-16.31,0V34H82.93v8.15a8.15,8.15,0,0,1-16.31,0V34H42.16A8.17,8.17,0,0,0,34,42.16V66.62Zm-8.15-48.92a24.49,24.49,0,0,1,24.46,24.46V278.6H17.71V42.16A24.49,24.49,0,0,1,42.16,17.71H66.62V9.55a8.15,8.15,0,0,1,16.31,0v8.15H197.07V9.55a8.15,8.15,0,1,1,16.31,0v8.15Z"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Calendar
+              </div>
+            </a>
+          </li>
+          <li class="menu-item ic-app-header__menu-list-item ">
+            <a id="global_nav_conversations_link" href="/conversations" class="ic-app-header__menu-list-link">
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--inbox" version="1.1" x="0" y="0" viewBox="0 0 280 280" enable-background="new 0 0 280 280" xml:space="preserve"><path d="M91.72,120.75h96.56V104.65H91.72Zm0,48.28h80.47V152.94H91.72Zm0-96.56h80.47V56.37H91.72Zm160.94,34.88H228.52V10.78h-177v96.56H27.34A24.17,24.17,0,0,0,3.2,131.48V244.14a24.17,24.17,0,0,0,24.14,24.14H252.66a24.17,24.17,0,0,0,24.14-24.14V131.48A24.17,24.17,0,0,0,252.66,107.34Zm0,16.09a8.06,8.06,0,0,1,8,8v51.77l-32.19,19.31V123.44ZM67.58,203.91v-177H212.42v177ZM27.34,123.44H51.48v79.13L19.29,183.26V131.48A8.06,8.06,0,0,1,27.34,123.44ZM252.66,252.19H27.34a8.06,8.06,0,0,1-8-8V202l30,18H230.75l30-18v42.12A8.06,8.06,0,0,1,252.66,252.19Z"/></svg>
+
+                <span class="menu-item__badge" style="display: none">0</span>
+              </div>
+              <div class="menu-item__text">
+                Inbox
+              </div>
+            </a>
+          </li>
+            
+
+          <li class="ic-app-header__menu-list-item">
+           <a id="global_nav_help_link" class="ic-app-header__menu-list-link" data-track-category="help system" data-track-label="help button" href="http://help.instructure.com/">
+              <div class="menu-item-icon-container" role="presentation">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg menu-item__icon svg-icon-help" version="1.1" x="0" y="0" viewBox="0 0 200 200" enable-background="new 0 0 200 200" xml:space="preserve" fill="currentColor"><path d="M100,127.88A11.15,11.15,0,1,0,111.16,139,11.16,11.16,0,0,0,100,127.88Zm8.82-88.08a33.19,33.19,0,0,1,23.5,23.5,33.54,33.54,0,0,1-24,41.23,3.4,3.4,0,0,0-2.74,3.15v9.06H94.42v-9.06a14.57,14.57,0,0,1,11.13-14,22.43,22.43,0,0,0,13.66-10.27,22.73,22.73,0,0,0,2.31-17.37A21.92,21.92,0,0,0,106,50.59a22.67,22.67,0,0,0-19.68,3.88,22.18,22.18,0,0,0-8.65,17.64H66.54a33.25,33.25,0,0,1,13-26.47A33.72,33.72,0,0,1,108.82,39.8ZM100,5.2A94.8,94.8,0,1,0,194.8,100,94.91,94.91,0,0,0,100,5.2m0,178.45A83.65,83.65,0,1,1,183.65,100,83.73,83.73,0,0,1,100,183.65" transform="translate(-5.2 -5.2)"/></svg>
+
+              </div>
+              <div class="menu-item__text">
+                Help
+              </div>
+</a>          </li>
+        </ul>
+      </div>
+      <div class="ic-app-header__secondary-navigation">
+        <ul class="ic-app-header__menu-list">
+          <li class="menu-item ic-app-header__menu-list-item">
+            <button
+              id="primaryNavToggle"
+              class="ic-app-header__menu-list-link ic-app-header__menu-list-link--nav-toggle"
+              aria-label="Minimize global navigation"
+              title="Minimize global navigation"
+            >
+              <div class="menu-item-icon-container" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" class="ic-icon-svg ic-icon-svg--navtoggle" version="1.1" x="0" y="0" width="40" height="32" viewBox="0 0 40 32" xml:space="preserve">
+  <path d="M39.5,30.28V2.48H37.18v27.8Zm-4.93-13.9L22.17,4,20.53,5.61l9.61,9.61H.5v2.31H30.14l-9.61,9.61,1.64,1.64Z"/>
+</svg>
+
+              </div>
+            </button>
+          </li>
+        </ul>
+      </div>
+    <div id="global_nav_tray_container"></div>
+  </header>
+
+
+  <div id="instructure_ajax_error_box">
+    <div style="text-align: right; background-color: #fff;"><a href="#" class="close_instructure_ajax_error_box_link">Close</a></div>
+    <iframe id="instructure_ajax_error_result" src="about:blank" style="border: 0;" title="Error"></iframe>
+  </div>
+
+  
+
+  <div id="wrapper" class="ic-Layout-wrapper">
+      <div class="ic-app-nav-toggle-and-crumbs no-print">
+          <button type="button" id="courseMenuToggle" class="Button Button--link ic-app-course-nav-toggle" aria-live="polite" aria-label="Hide Courses Navigation Menu" title="Hide Courses Navigation Menu">
+            <i class="icon-hamburger" aria-hidden="true"></i>
+          </button>
+          <div class="ic-app-crumbs">
+        <nav id="breadcrumbs" role="navigation" aria-label="breadcrumbs"><ul><li class="home"><a href="/"><span class="ellipsible">      <i class="icon-home"
+         title="My Dashboard">
+        <span class="screenreader-only">My Dashboard</span>
+      </i>
+</span></a></li><li><a href="/courses/72921"><span class="ellipsible">2018SP_EECS_340-0_SEC1</span></a></li><li><a href="/courses/72921/assignments"><span class="ellipsible">Assignments</span></a></li><li><a href="https://canvas.northwestern.edu/courses/72921/assignments/461049"><span class="ellipsible">Project 2</span></a></li></ul></nav>
+        </div>
+      </div>
+    <div id="main" class="ic-Layout-columns">
+        <div class="ic-Layout-watermark"></div>
+        <div id="left-side"
+          class="ic-app-course-menu list-view"
+          style="display: block"
+          >
+              <span id="section-tabs-header-subtitle" class="ellipsis">2018 Spring</span>
+            <nav role="navigation" aria-label="Courses Navigation Menu"><ul id="section-tabs"><li class="section"><a href="/courses/72921/assignments/syllabus" title="Syllabus" class="syllabus">Syllabus</a></li><li class="section"><a href="/courses/72921/announcements" title="Announcements" class="announcements">Announcements</a></li><li class="section"><a href="/courses/72921/assignments" title="Assignments" class="assignments active">Assignments</a></li><li class="section"><a href="/courses/72921/grades" title="Grades" class="grades">Grades</a></li><li class="section"><a href="/courses/72921/users" title="People" class="people">People</a></li><li class="section"><a href="/courses/72921/files" title="Files" class="files">Files</a></li><li class="section"><a href="/courses/72921/external_tools/14491" title="Panopto" class="context_external_tool_14491">Panopto</a></li><li class="section"><a href="/courses/72921/external_tools/18206" title="Google Drive" class="context_external_tool_18206">Google Drive</a></li></ul></nav>
+        </div>
+      <div id="not_right_side" class="ic-app-main-content">
+        <div id="content-wrapper" class="ic-Layout-contentWrapper">
+            
+
+          <div id="content" class="ic-Layout-contentMain" role="main">
+            
+
+
+
+<div id="assignment_show" class="assignment content_underline_links">
+    <!--Student View-->
+    <div class='assignment-title'>
+      <div class='title-content'>
+        <h1 class="title">
+          Project 2
+        </h1>
+      </div>
+      <div class='assignment-buttons'>
+        
+
+        <a role="button" class="Button Button--primary submit_assignment_link " href="#">Re-submit Assignment</a>
+      </div>
+    </div>
+    <ul class='student-assignment-overview'>
+      <li>
+        <span class='title'>Due</span>
+        <span class='value'>
+          <span class="date_text">
+                <span class="display_date">May 14</span> by 
+                <span class="display_time">11:59pm</span>
+          </span>
+        </span>
+      </li>
+      <li>
+        <span class='title'>Points</span>
+        <span class='value'>125</span>
+      </li>
+        <li>
+          <span class='title'>Submitting</span>
+          <span class='value'>a file upload</span>
+        </li>
+          <li>
+            <span class='title'>File Types</span>
+            <span class='value'>tar.gz, tgz, and zip</span>
+          </li>
+      
+
+      <div class="clear"></div>
+    </ul>
+
+  <div class="clear"></div>
+
+
+  <div class="clear"></div>
+
+  <div class="description user_content student-version"><p>In this project, you will implement a Manipulative DNS proxy and deploy it to Amazon Web Services.</p>
+<h3>Learning objectives</h3>
+<ul>
+<li>Understand the role of the Domain Name Service in the Internet's operation.</li>
+<li>Gain experience reading network application protocol specifications, while implementing a simple DNS proxy.</li>
+<li>Gain experience debugging network services using Wireshark.</li>
+<li>Learn how web pages can be dynamically generated by a web server. </li>
+<li>Gain experience using an industry-standard cloud-computing platform.</li>
+<li>Configure a basic firewall.</li>
+<li>Implement a service that uses the UDP transport protocol.</li>
+</ul>
+<h2>About Cloud Computing</h2>
+<p>Cloud Computing basically just means renting a <strong>virtual server</strong> from a cloud computing provider such as Amazon, Microsoft, or Google.  Cloud computing became popular in the late 2000s in response to two major trends:</p>
+<ol>
+<li>Software was increasing designed to run <strong>as a service</strong>, meaning that it runs entirely on remote servers (as for web-based applications) or with a significant server-side backend component (as for smartphone-based applications).  This was a departure from the earlier (1990s) model of software development where software and data lived primarily on an individual's personal computer.  Software as a service (SaaS) allows users to be more mobile -- accessing their documents and data from a variety of Internet-connected devices.</li>
+<li>Virtualization technology allowed a single physical server to simultaneously run several isolated operating systems, thus providing the illusion of many low cost <strong>virtual machines </strong>(VMs).  You may lease a small (but reliable) VM from Amazon for $5 per month.  For most software developers this offers several types of savings, all derived from the cloud provider's economies of scale:
+<ul>
+<li>Many software applications require just a fraction of one machine, so the overall cost is reduced by sharing with other tenants.</li>
+<li>There is no need for the tenant to hire IT staff capable of managing complex datacenter hardware (servers, switches, routers, power distribution systems, cooling).  Instead the tenant relies on the cloud provider's shared IT expertise.</li>
+<li>Fault-tolerant, reliable electricity, cooling, and storage are provided transparently, without any effort on the tenant's part.  Instead the tenant uses the cloud provider's shared infrastructure.</li>
+</ul>
+</li>
+</ol>
+<p>Most of today's software is written to run in "the cloud" and so will your Project 2.</p>
+<h2>Part 1: Create a virtual server on AWS</h2>
+<p>This part is worth 10% of the points for the project.  If you work in pairs, then both partners should complete these steps (although you will only use one of the servers later).</p>
+<ul>
+<li>Create an account on <a href="https://aws.amazon.com/">Amazon Web Services</a> (AWS).  You should be able to this assignment entirely using the "free tier" of service, but you may have to pay a few dollars here and there for extra services.  Please beware that a few wrong clicks can lead to a very large bill.  So, you should <strong>not</strong> share your AWS password with your teammate.  AWS offers many services, but we will be using it's original service, called EC2 (elastic compute cloud).</li>
+<li>Under Compute/EC2, launch a new instance.  "Instance" is EC2's term for a virtual machine.
+<ul>
+<li>Choose the latest "<span>Amazon Linux AMI", which is listed first.  Here were are choosing the OS that we want pre-installed on our VM.</span>
+</li>
+<li><span>Choose the "t2.micro" instance size.  It should say "free tier eligible."  Choosing a larger VM can cost you a lot of money, as you can <a href="https://aws.amazon.com/ec2/pricing/on-demand/">see here</a>.  (The only reason I don't suggest t2.nano is because it is not free tier eligible.)</span></li>
+<li><span>Click "Next: Configure Instance Details."  Read the options, but do not change anything.</span></li>
+<li><span>Click "Next: Add Storage."  Read the options, but do not change anything.</span></li>
+<li><span>Click "Next: Add Tags."</span></li>
+<li><span>Click "Next: Configure Security Group."</span></li>
+<li>
+<span>On the Security Group page, you must configure four inbound firewall rules to allow network connections <strong>from</strong> <strong>anywhere</strong> to your new machine as follows:</span>
+<ul>
+<li><span>port 22 (for SSH), as selected by default</span></li>
+<li><span>port 53/UDP (for DNS)</span></li>
+<li>
+<span>port 53/TCP (for DNS)</span><span></span>
+</li>
+<li>
+<span>port 80 (for HTTP)</span><span></span>
+</li>
+</ul>
+</li>
+<li><span>Click "Review and Launch," then "Launch"</span></li>
+<li><span>Choose "Create a new key pair," download the .pem file and store it in a safe place.  You will need this to log in to your VM.  You should give a copy of this .pem file to your partner so that they too will be able to log into the machine.</span></li>
+<li><span>Click "Launch instances" and wait a minute or so until the EC2 dashboard shows that your VM is ready.</span></li>
+<li><span>Note the "IPv4 Public IP" address listed for your new VM in the EC2 dashboard.  You will use this when connecting to your server.</span></li>
+<li>
+<span>From the EC2 dashboard, click the "connect" button to see the instructions for logging into your machine with SSH.  Please be aware that your username will be "ec2-user" by default.</span><span></span>
+</li>
+<li><span>Log in and test that you have a working Linux environment.  You may use the "yum" command to install new software packages.  For example, run "yum list available" to see available software packages.  Then run "sudo yum install gcc-c++" to install the GNU C Compiler.</span></li>
+</ul>
+</li>
+</ul>
+<p>If you run into issues with your VM, please try Googling for help using the term "Amazon AMI" to identify this particular distribution of the Linux OS.  Please remember to terminate your instance after the course is completed; otherwise AWS will continue to bill you.</p>
+<p><strong>Deliverables</strong>:</p>
+<ul>
+<li>In your README.txt, please include the public IP address of both partner's EC instances.</li>
+</ul>
+<h2>Part 2: UDP DNS proxy</h2>
+<p>This part is worth 40% of the points for this project.</p>
+<p>You will write a DNS proxy server in C, C++ or Python.  A DNS proxy listens on port 53 for DNS queries, forwards those queries to a single upstream DNS resolver, waits for an answer from the upstream resolver, and forwards the answer back to the client.  Your DNS proxy will run (continuously, as a service) on the VM you set up in Part 1.  You can test your code by running it on your local machine, but you will likely have to run the code as <em>root</em> (administrator) because your are opening a privileged port (53 &lt; 1024).</p>
+<p>UDP sockets must be declared with the SOCK_DGRAM, while TCP sockets are declared are SOCK_STREAM.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li>
+<a href="https://tools.ietf.org/html/rfc5625">RFC 5625</a> describes how a DNS proxy should work. </li>
+<li>
+<a href="http://www.cs.newpaltz.edu/~pletcha/NET_PY/the-protocols-tcp-ip-illustrated-volume-1.9780201633467.24290.pdf">TCP/IP Illustratrated Volume 1</a> has a chapter on the DNS protocol.</li>
+<li>
+<a href="https://tools.ietf.org/html/rfc1035">RFC 1035</a> describes the basics of the DNS protocol.</li>
+<li>A <a href="https://pymotw.com/2/socket/udp.html">Python UDP client and server example</a>.</li>
+</ul>
+<p><strong>Simplifications for this project:</strong></p>
+<ul>
+<li>As indicated in <a href="https://tools.ietf.org/html/rfc5625">RFC 5625</a>, you don't really have to parse the DNS queries or answers at all to implement a proxy.  Just pass the entire query (unmodified) from client to upstream server, and pass the entire answer (unmodified) from upstream server to the client.</li>
+<li>You may hard-code the upstream DNS resolver to be 8.8.8.8 or 8.8.4.4 (the Google public DNS servers).  In other words, you will be forwarding all client requests to the Google public DNS servers.</li>
+</ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>DNS occasionally operates on a TCP connection (instead of UDP), particularly when the request or response is larger than can fit in one packet.  You should just implement a UDP service for this part of the project.</li>
+<li>Because you are not modifying the query, you should be able to handle all types of queries, like A, MX, NS, etc.</li>
+<li>You may not use any third-party libaries to complete the assignment.  We expect you to use the BSD socket API, as in Project 1.
+<ul></ul>
+</li>
+<li>If you use Python, your code should work with the default version 2.7 installation that comes with the Amazon Linux AMI.</li>
+<li>Test your DNS proxy using the <strong>nslookup</strong> command.  You will specify the IP address of the your proxy server as the resolver (as well as specifying the hostname which you are querying).  Use Wireshark (as in HW1) to debug any problems that arise.</li>
+<li>Test your DNS proxy by changing the DNS server of your laptop to the IP address of your AWS instance.  This can be done in your OS network configuration.  Start network capture in Wireshark (as in HW1).  Whenever you visit a new website (or after you clear your DNS cache) you should see DNS queries and answer flowing between your laptop and your AWS instance.  You must verify that the IP address of the DNS server matches your AWS instance (otherwise you're not really testing it).  If your proxy server is not working, then your laptop will not be able to browse the web (except perhaps to websites whose DNS mapping have been cached locally).</li>
+<li>The most advanced version of your DNS proxy (part 2, 3, or 4) should be running on your VM for several days after you submit your assignment.  You will have to take special steps to keep your proxy process running (in the background) even after you close your SSH session.
+<ul>
+<li>My favorite way to create a short-lived background process is to use the <strong>screen</strong> command.  Screen gives you a virtual terminal that you can disconnect from and leave running in the background.  For example, run "screen", then "ctrl-a d" to disconnect from the terminal.  You can log out, log back in, then type "screen -r" to reconnect to the exact same terminal.</li>
+</ul>
+</li>
+</ul>
+<p><strong>Deliverables</strong>:</p>
+<ul>
+<li>The source code for your DNS proxy, in a folder called <strong>part2</strong> in your submission.</li>
+<li> A Makefile (if using C or C++) to build your proxy.</li>
+</ul>
+<h2>Part 3: TCP DNS Proxy</h2>
+<p>This part is worth 10% of the points for this project.</p>
+<p>DNS also operates on TCP, particularly to handle large reponses.  Modify your proxy from Part 2 to listen to requests <strong>both</strong> on UDP and TCP.  You will need two different "accept sockets."</p>
+<p>TCP DNS messages <a href="https://tools.ietf.org/html/rfc7766#page-11">always begin a two byte length field</a> telling you how much data you should read from the TCP stream.</p>
+<p>Your proxy will always reply using the same transport protocol as the request came in.  So, answer UDP queries with UDP answers, and answer TCP queries on the same TCP connection.  There is no need to examine the responses at all.  If a large response is needed, you'll see this happen:</p>
+<ul>
+<li>Client sends a UDP query</li>
+<li>Your proxy relays the query to the upstream server and get a response.  The response says that the answer is truncated, but your proxy doesn't care.  Just relay the answer to the client.</li>
+<li>Client should see that the answer was truncated and now send a TCP query, which you can relay to the upstream server to get a full response.</li>
+</ul>
+<p><strong>Reference</strong>:</p>
+<ul>
+<li><a href="https://tools.ietf.org/html/rfc1123#page-75">Section 6.1.3.2 of RFC 1123</a></li>
+<li><a href="https://tools.ietf.org/html/rfc7766">RFC 7766 -- DNS over TCP</a></li>
+</ul>
+<p><strong>Requirements:</strong></p>
+<ul>
+<li>Same as for Part 2, except you should also see some DNS requests that use TCP instead of UDP.</li>
+<li>Use the <strong>nslookup</strong> command to test a query that has a very long answer and requires TCP.  For example, the following request should try with UDP, get a truncated response, then retry the request with TCP:
+<ul>
+<li>On Mac/Linux:<br>nslookup -type=TXT long.stevetarzia.com [DNS_proxy_IP_address]</li>
+<li>On Windows:<br>nslookup -querytype=TXT long.stevetarzia.com. [DNS_proxy_IP_address]</li>
+</ul>
+</li>
+<li>Test a query that uses TCP immediately, without trying UDP first:
+<ul>
+<li>On Mac/Linux, you can do this with:<br>$ nslookup -vc domain.com [DNS_proxy_IP_address]</li>
+<li>On Windows:<br>$ nslookup "-set vc" domain.com [DNS_proxy_IP_address]</li>
+</ul>
+</li>
+</ul>
+<p><strong>Deliverables:</strong></p>
+<ul>
+<li>The source of your TCP-enabled DNS proxy, in a folder called <strong>part3</strong> in your submission.</li>
+<li>A Makefile (if using C or C++) to build your proxy.</li>
+</ul>
+<h2>Part 4: Manipulated DNS</h2>
+<p>This part is worth 30% of the points for this project.</p>
+<p>In the final part of this project, you are going to build on the server from Part 3, and implement a manipulative DNS proxy that gives annoying answers to certain queries.  This is actually done by <a href="https://en.wikipedia.org/wiki/DNS_hijacking#Manipulation_by_ISPs">some ISPs</a> in order to earn a few advertising dollars.  The basic idea is to look for DNS queries that get no valid answer (usually caused by a typing error).  Instead of returning the "no such name" response, you will return the IP address of your AWS virtual machine.  In Part 5, you'll implement the web server that handles these requests.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li>
+<a href="http://www.cs.newpaltz.edu/~pletcha/NET_PY/the-protocols-tcp-ip-illustrated-volume-1.9780201633467.24290.pdf">TCP/IP Illustratrated Volume 1</a> has a chapter on the DNS protocol.</li>
+<li>
+<a href="https://tools.ietf.org/html/rfc1035">RFC 1035</a> describes the basics of the DNS protocol.</li>
+</ul>
+<p><strong>Requirements</strong>:</p>
+<ul>
+<li>Examine every DNS answer.  If it is a "no such name" response, then discard it and construct a new response with a single A record with your instance's public IP address.  (The public IP address can be a command-line parameter to your script.)  Relay the fabricated response to the client.</li>
+<li>Do not interfere with DNS queries for valid domains.  In other words, your proxy should behave as in Part 3 for DNS queries that are not misspelled.</li>
+<li>Test with <strong>nslookup</strong>.  For example, perform queries for both "google.com" and "lkjdsflkjwelkjflkwejkl.com".  The second should return the IP address of your server.
+<ul>
+<li>Windows tip: If you're testing with nslookup on Windows, please add a period after the domain name, as suggested here: <a href="https://serverfault.com/a/861547">https://serverfault.com/a/861547</a> </li>
+</ul>
+</li>
+</ul>
+<p><strong>Deliverables:</strong></p>
+<ul>
+<li>The source of your manupulative DNS proxy, in a folder called <strong>part4</strong> in your submission.</li>
+<li> A Makefile (if using C or C++) to build your proxy.</li>
+</ul>
+<h2>Part 5: Advertisement server</h2>
+<p>This part is worth 10% of the points for this project.</p>
+<p>Building off of the web servers from Project 1, implement a web server that listens on port 80 (this can be hard-coded) and serves up a dynamic html page for every GET request.  The page should be valid HTML and it must include the misspelled domain name entered by the user.  For example, your page might say "I see you were looking for caaatfood.com, but wouldn't you rather buy that from <a href="https://www.walmart.com/search/?query=caaatfood&amp;cat_id=0">walmart.com</a>?"  You'll find the domain name in the "Host:" header of the request.</p>
+<p><strong>References:</strong></p>
+<ul>
+<li>Project 1</li>
+<li><a href="https://www.w3schools.com/html/html_basic.asp">Basic HTML</a></li>
+</ul>
+<p><strong>To Test:</strong></p>
+<ul>
+<li>Visit http://[VM_IP_ADDRESS] in a browser on your laptop.  You should see your dynamic page rendered in the browser.  </li>
+<li>As above, configure your laptop to use your manipulative DNS server.</li>
+<li>Open a browser and now visit an invalid hostname, like "jksdldkjldkjlelleeee.com"</li>
+<li>The browser should render a webpage, served from your advertisement server, which contains the invalid domain name.  Your browser's address bar should list the domain name you typed.</li>
+<li>Any valid URL, like google.com should work as normal, without any interference from your DNS proxy or advertisement server.</li>
+</ul>
+<p><strong>Deliverables:</strong></p>
+<ul>
+<li>The source of your HTTP advertisement server, in a folder called <strong>part5</strong> in your submission.</li>
+<li> A Makefile (if using C or C++) to build your proxy.</li>
+<li>As for the DNS proxy, please make sure that your advertisement server is running in the background on your AWS instance during the grading period.</li>
+</ul></div>
+
+
+  <div style="display: none;">
+    <span class="timestamp">1526360340</span>
+    <span class="due_date_string">05/14/2018</span>
+    <span class="due_time_string">11:59pm</span>
+  </div>
+</div>
+
+
+  
+<div style="display: none;" id="submit_assignment" data-context_code="course_72921" data-asset_string="assignment_461049">
+  <div class="content" id="submit_assignment_tabs">
+    <ul>
+        <li><a href="#submit_online_upload_form" class="submit_online_upload_option">File Upload</a></li>
+        <li><a href="#submit_from_external_tool_form_18206"
+          class="external-tool"
+          data-id="18206"
+          data-name="Google Apps">Google Drive</a></li>
+    </ul>
+      
+<form id="submit_online_upload_form" class="submit_assignment_form" enctype="multipart/form-data" action="/courses/72921/assignments/461049/submissions" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="LaVdfQO5F9/4Mb7Xr9sAst7FEyWTTYA9Nk2Wf+ujZuFrwBRLdONe9I9C7ZuckWbZ6Idabfpis2dCIvdJvNsohg==" />
+    <input value="online_upload" type="hidden" name="submission[submission_type]" id="submission_submission_type" />
+    <input value="" id="submission_attachment_ids" type="hidden" name="submission[attachment_ids]" />
+    <input id="eula_agreement_timestamp" type="hidden" name="submission[eula_agreement_timestamp]" />
+    <table class="formtable" style="width: 100%;">
+      <tr>
+        <td colspan="2">
+          Upload a file, or choose a file you&#39;ve already uploaded.
+            
+
+  <div
+    class="group_submission_alert"
+    data-group-type="Project 2 Groups"
+  ></div>
+
+        </td>
+      </tr><tr>
+        <td><label id="attachmentLabel" for="attachment_uploaded_data">File:</label></td>
+        <td>
+          <a href="#" class="add_another_file_link">
+            <i class="icon-add" aria-hidden="true"></i>
+            Add Another File
+          </a>
+          <div id="submission_attachment_blank" class="submission_attachment" style="display: none;">
+            <input aria-labelledby="attachmentLabel" type="file" name="attachments[-1][uploaded_data]" class="input-file"/>
+            <a href="#" class="remove_attachment_link no-hover" style="display: none;"><i class="icon-end" aria-hidden="true"></i><span class="screenreader-only">remove empty attachment</span></a>
+              <div class='bad_ext_msg error_message' style="display: none">
+                This file type is not allowed. Accepted file types are: tar.gz, tgz, and zip
+              </div>
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td style="font-size: 0.8em;">
+        <a href="#" class="toggle_uploaded_files_link">Click here to find a file you&#39;ve already uploaded</a><br/>
+        <div id="uploaded_files" style="display: none;">
+          
+          
+<ul>
+    <li class="folder  folder folder_786449">
+      <span class="id" style="display: none;">786449</span>
+      <span class="text name">my files</span>
+        
+<ul>
+    <li class="folder  folder folder_791199">
+      <span class="id" style="display: none;">791199</span>
+      <span class="text name">提交文件</span>
+        
+<ul>
+    <li class="folder  folder folder_958440">
+      <span class="id" style="display: none;">958440</span>
+      <span class="text name">2018SP_EECS_395-0_SEC81_AND_495-0_SEC81</span>
+        
+<ul>
+    <li class="file  file file_5266723">
+      <span class="id" style="display: none;">5266723</span>
+      <span class="text name">reinforcement_homework_1.ipynb</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_950308">
+      <span class="id" style="display: none;">950308</span>
+      <span class="text name">2018SP_EECS_340-0_SEC1 Introduction to Networking</span>
+        
+<ul>
+    <li class="file  file file_5199032">
+      <span class="id" style="display: none;">5199032</span>
+      <span class="text name">project1_ydi6174.tar.gz</span>
+    </li>
+    <li class="file  zip file_5318696">
+      <span class="id" style="display: none;">5318696</span>
+      <span class="text name">project2_ydi6174.zip</span>
+    </li>
+    <li class="file  zip file_5319326">
+      <span class="id" style="display: none;">5319326</span>
+      <span class="text name">project2_ydi6174-1.zip</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_936813">
+      <span class="id" style="display: none;">936813</span>
+      <span class="text name">2018SP_DATA_SCI_423-0_SEC1_AND_EECS_395-0_SEC83_AND_EECS_495-0_SEC83</span>
+        
+<ul>
+    <li class="file  pdf file_5138840">
+      <span class="id" style="display: none;">5138840</span>
+      <span class="text name">Homework 1.pdf</span>
+    </li>
+    <li class="file  pdf file_5139047">
+      <span class="id" style="display: none;">5139047</span>
+      <span class="text name">Homework 1-1.pdf</span>
+    </li>
+    <li class="file  pdf file_5140398">
+      <span class="id" style="display: none;">5140398</span>
+      <span class="text name">Homework 1-2.pdf</span>
+    </li>
+    <li class="file  pdf file_5144910">
+      <span class="id" style="display: none;">5144910</span>
+      <span class="text name">Homework 1-3.pdf</span>
+    </li>
+    <li class="file  pdf file_5145517">
+      <span class="id" style="display: none;">5145517</span>
+      <span class="text name">Homework 1-4.pdf</span>
+    </li>
+    <li class="file  pdf file_5148407">
+      <span class="id" style="display: none;">5148407</span>
+      <span class="text name">Homework 1-5.pdf</span>
+    </li>
+    <li class="file  pdf file_5150022">
+      <span class="id" style="display: none;">5150022</span>
+      <span class="text name">Homework 1-6.pdf</span>
+    </li>
+    <li class="file  pdf file_5153018">
+      <span class="id" style="display: none;">5153018</span>
+      <span class="text name">Homework 1-7.pdf</span>
+    </li>
+    <li class="file  pdf file_5182399">
+      <span class="id" style="display: none;">5182399</span>
+      <span class="text name">Homework 2.pdf</span>
+    </li>
+    <li class="file  pdf file_5229535">
+      <span class="id" style="display: none;">5229535</span>
+      <span class="text name">Homework 3.pdf</span>
+    </li>
+    <li class="file  pdf file_5235313">
+      <span class="id" style="display: none;">5235313</span>
+      <span class="text name">HOMEWORK#3.pdf</span>
+    </li>
+    <li class="file  zip file_5235314">
+      <span class="id" style="display: none;">5235314</span>
+      <span class="text name">YifeiDeng.zip</span>
+    </li>
+    <li class="file  pdf file_5279137">
+      <span class="id" style="display: none;">5279137</span>
+      <span class="text name">Homework 4.pdf</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_883090">
+      <span class="id" style="display: none;">883090</span>
+      <span class="text name">2018WI_EECS_395-0_SEC78_AND_495-0_SEC78</span>
+        
+<ul>
+    <li class="file  file file_4720695">
+      <span class="id" style="display: none;">4720695</span>
+      <span class="text name">deep_learning_hw1_exercise_2.ipynb</span>
+    </li>
+    <li class="file  file file_4720696">
+      <span class="id" style="display: none;">4720696</span>
+      <span class="text name">deep_learning_hw1_exercise_3.ipynb</span>
+    </li>
+    <li class="file  file file_4720697">
+      <span class="id" style="display: none;">4720697</span>
+      <span class="text name">deep_learning_hw1_exercise_4.ipynb</span>
+    </li>
+    <li class="file  file file_4720698">
+      <span class="id" style="display: none;">4720698</span>
+      <span class="text name">deep_learning_hw1_exercise_5.ipynb</span>
+    </li>
+    <li class="file  file file_4738230">
+      <span class="id" style="display: none;">4738230</span>
+      <span class="text name">deep_learning_hw2.ipynb</span>
+    </li>
+    <li class="file  file file_4754039">
+      <span class="id" style="display: none;">4754039</span>
+      <span class="text name">deep_learning_hw2-1.ipynb</span>
+    </li>
+    <li class="file  zip file_4851530">
+      <span class="id" style="display: none;">4851530</span>
+      <span class="text name">DL_assignment_3.zip</span>
+    </li>
+    <li class="file  zip file_4857991">
+      <span class="id" style="display: none;">4857991</span>
+      <span class="text name">DL_assignment_3-1.zip</span>
+    </li>
+    <li class="file  zip file_4862244">
+      <span class="id" style="display: none;">4862244</span>
+      <span class="text name">DL_assignment_3-2.zip</span>
+    </li>
+    <li class="file  file file_4970717">
+      <span class="id" style="display: none;">4970717</span>
+      <span class="text name">deep_learning_hw4.ipynb</span>
+    </li>
+    <li class="file  file file_5055699">
+      <span class="id" style="display: none;">5055699</span>
+      <span class="text name">Final_Exam.ipynb</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_866981">
+      <span class="id" style="display: none;">866981</span>
+      <span class="text name">2018WI_EECS_343-0_SEC1 Operating Systems</span>
+        
+<ul>
+    <li class="file  text file_4666222">
+      <span class="id" style="display: none;">4666222</span>
+      <span class="text name">answers.txt</span>
+    </li>
+    <li class="file  text file_4676479">
+      <span class="id" style="display: none;">4676479</span>
+      <span class="text name">answers-1.txt</span>
+    </li>
+    <li class="file  text file_4676503">
+      <span class="id" style="display: none;">4676503</span>
+      <span class="text name">answers-2.txt</span>
+    </li>
+    <li class="file  text file_4676539">
+      <span class="id" style="display: none;">4676539</span>
+      <span class="text name">answers-3.txt</span>
+    </li>
+    <li class="file  file file_4696575">
+      <span class="id" style="display: none;">4696575</span>
+      <span class="text name">project1_solution.patch</span>
+    </li>
+    <li class="file  file file_4696781">
+      <span class="id" style="display: none;">4696781</span>
+      <span class="text name">project1_solution-1.patch</span>
+    </li>
+    <li class="file  file file_4706916">
+      <span class="id" style="display: none;">4706916</span>
+      <span class="text name">project1_solution-2.patch</span>
+    </li>
+    <li class="file  file file_4707194">
+      <span class="id" style="display: none;">4707194</span>
+      <span class="text name">project1_solution-3.patch</span>
+    </li>
+    <li class="file  file file_4823864">
+      <span class="id" style="display: none;">4823864</span>
+      <span class="text name">project2_solution.patch</span>
+    </li>
+    <li class="file  file file_4903642">
+      <span class="id" style="display: none;">4903642</span>
+      <span class="text name">project3_solution.patch</span>
+    </li>
+    <li class="file  file file_5000731">
+      <span class="id" style="display: none;">5000731</span>
+      <span class="text name">project4_solution.patch</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_865374">
+      <span class="id" style="display: none;">865374</span>
+      <span class="text name">2018WI_EECS_330-0_SEC20 Human Computer Interaction</span>
+        
+<ul>
+    <li class="file  pdf file_4662473">
+      <span class="id" style="display: none;">4662473</span>
+      <span class="text name">P1.1 Project Brainstorm.pdf</span>
+    </li>
+    <li class="file  pdf file_4667148">
+      <span class="id" style="display: none;">4667148</span>
+      <span class="text name">Proposal.pdf</span>
+    </li>
+    <li class="file  zip file_4682125">
+      <span class="id" style="display: none;">4682125</span>
+      <span class="text name">HW1.zip</span>
+    </li>
+    <li class="file  zip file_4762543">
+      <span class="id" style="display: none;">4762543</span>
+      <span class="text name">HW2.zip</span>
+    </li>
+    <li class="file  pdf file_4838487">
+      <span class="id" style="display: none;">4838487</span>
+      <span class="text name">HW 3: User Interface Critique.pdf</span>
+    </li>
+    <li class="file  pdf file_4925634">
+      <span class="id" style="display: none;">4925634</span>
+      <span class="text name">HW4: Graphic Design Critique.pdf</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_832552">
+      <span class="id" style="display: none;">832552</span>
+      <span class="text name">2017FA_EECS_395-0_SEC34_AND_495-0_SEC34</span>
+        
+<ul>
+    <li class="file  zip file_4381910">
+      <span class="id" style="display: none;">4381910</span>
+      <span class="text name">assignment 2.zip</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_817024">
+      <span class="id" style="display: none;">817024</span>
+      <span class="text name">2017FA_EECS_495-0_SEC75 Special Topics in Electrical Engineering and Computer Science: Introduction to Database Systems</span>
+        
+<ul>
+    <li class="file  pdf file_4275071">
+      <span class="id" style="display: none;">4275071</span>
+      <span class="text name">homework1.pdf</span>
+    </li>
+    <li class="file  doc file_4334197">
+      <span class="id" style="display: none;">4334197</span>
+      <span class="text name">Project 1 Yifei Deng.docx</span>
+    </li>
+    <li class="file  doc file_4529413">
+      <span class="id" style="display: none;">4529413</span>
+      <span class="text name">Database Project 3_Xinjie You &amp; Yifei Deng.docx</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_791200">
+      <span class="id" style="display: none;">791200</span>
+      <span class="text name">2017FA_EECS_396-0_SEC20_AND_496-0_SEC20</span>
+        
+<ul>
+    <li class="file  zip file_4177809">
+      <span class="id" style="display: none;">4177809</span>
+      <span class="text name">ydi6174-Homework0.zip</span>
+    </li>
+</ul>
+
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_787138">
+      <span class="id" style="display: none;">787138</span>
+      <span class="text name">profile pictures</span>
+        
+<ul>
+    <li class="file  image file_4685288">
+      <span class="id" style="display: none;">4685288</span>
+      <span class="text name">profilePic.jpg</span>
+    </li>
+    <li class="file  image file_4943389">
+      <span class="id" style="display: none;">4943389</span>
+      <span class="text name">profile.jpg</span>
+    </li>
+</ul>
+
+    </li>
+    <li class="folder  folder folder_786450">
+      <span class="id" style="display: none;">786450</span>
+      <span class="text name">conversation attachments</span>
+        
+<ul>
+</ul>
+
+    </li>
+</ul>
+
+    </li>
+</ul>
+
+        </div>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <textarea class="submission_comment_textarea" placeholder="Comments..." title="Additional comments" name="submission[comment]" id="submission_comment">
+</textarea>
+        </td>
+      </tr>
+      
+    <tr><td colspan="2">
+      All comments are sent to the whole group.
+      <input type="hidden" name="submission[group_comment]" value="1" />
+    </td></tr>
+
+      
+
+      <tr>
+        <td colspan="2" class='button-container'>
+          <button type="button" class='cancel_button btn'>Cancel</button>
+          <button type="submit" class="btn btn-primary" id="submit_file_button">Submit Assignment</button>
+        </td>
+      </tr><tr style="display: none;">
+        <td colspan="2" style="text-align: center;">
+          Submitting... <img src=""/>
+        </td>
+      </tr>
+    </table>
+    </form>
+
+
+
+    <style>
+    #google_docs_tree li.folder {
+      cursor: pointer;
+    }
+    #google_docs_tree li.file {
+      cursor: pointer;
+      -moz-border-radius: 3px;
+      width: 80%;
+      padding-right: 20px;
+    }
+    #google_docs_tree li.file:hover {
+      background-color: #eee;
+    }
+    ul.instTree li span.active {
+      background: none;
+    }
+    #google_docs_tree li.file.leaf.active {
+      background-color: #ddd;
+    }
+    #google_docs_tree li.file .filename {
+      float: left;
+      max-width: 98%;
+    }
+    #google_docs_tree li.file .popout {
+      float: right;
+    }
+    </style>
+
+
+      <div id="submit_from_external_tool_form_18206" style="padding: 5px 5px 0 5px;"></div>
+
+  </div>
+</div>
+
+
+
+
+
+  <div id="rubrics" style="margin-bottom: 10px;">
+    <div style="display: none;" id="rubric_parameters">
+      <input type="hidden" name="rubric_association[association_type]" value="Assignment"/>
+      <input type="hidden" name="rubric_association[association_id]" value="461049"/>
+      <input type="hidden" name="rubric_association[purpose]" value="grading"/>
+    </div>
+    
+<div id="rubric_long_description_dialog" style="display: none;">
+  <div class="editing">
+    <form id="edit_criterion_form" class="no-margin-bottom">
+      <div>
+        <label class="rating_form_label">Description
+          <textarea class="description" rows="1" name="description"></textarea>
+        </label>
+      </div>
+      <div>
+        <label class="rating_form_label">Long Description
+          <textarea class="long_description" rows="4" name="long_description"></textarea>
+        </label>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn save_button btn-primary">Update Criterion</button>
+      </div>
+    </form>
+  </div>
+  <div class="displaying">
+    <div class="long_description">
+    </div>
+  </div>
+</div>
+<div id="rubric_criterion_comments_dialog" style="display: none;">
+  <div
+    class="criterion_description"
+    style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;"
+    tabindex="-1"
+  ></div>
+  <div class="editing">
+    <label for="criterion_comments_textarea">
+      Additional Comments:
+    </label>
+    <textarea
+      id="criterion_comments_textarea"
+      class="criterion_comments"
+      name="criterion_comments"
+      style="width: 370px;"></textarea>
+    <div class="button-container">
+      <button type="button" class="btn btn button-secondary cancel_button">Cancel</button>
+      <button type="button" class="btn save_button">Update Comments</button>
+    </div>
+  </div>
+  <div class="displaying">
+    Additional Comments:
+    <div class="criterion_comments" style="margin-top: 10px;">
+    </div>
+  </div>
+</div>
+<div id="rubric_rating_dialog" style="display: none;">
+  <div class="description" style="border-bottom: 1px solid #ccc; padding: 5px 0; font-size: 1.2em; font-weight: bold; margin-bottom: 5px;">
+    <span id="edit_rating_form_criterion_description"></span>
+  </div>
+  <div class="editing">
+    <form id="edit_rating_form" class="no-margin-bottom">
+      <div>
+        <div><label id='rating_form_score_label' class="rating_form_label">Rating Score</label></div>
+        <span id='rating_form_max_score_label' hidden>Rating max score</span>
+        <input id="points" aria-labelledby="rating_form_score_label" type="text" size="2" name="points" class="no-margin-bottom span1" />
+        <span class="range_rating">to >
+          <input aria-label="Rating min score" type="text" size="2" name="min_points" class="no-margin-bottom span1 min_points" placeholder="min"/>
+        </span>pts
+      </div>
+      <div>
+        <label for="rating_form_title" class="rating_form_label">Rating Title</label>
+        <input id="rating_form_title" type="text" class="rating_description" style="width: 90%;" name="description"/>
+      </div>
+      <div>
+        <label for="rating_form_description" class="rating_form_label">Rating Description</label>
+        <textarea id="rating_form_description" rows="4" style="width: 90%;" class="rating_long_description" name="rating_long_description" form="edit_rating_form"></textarea>
+      </div>
+      <div class="button-container">
+        <button type="button" class="btn button-secondary cancel_button">Cancel</button>
+        <button type="button" class="btn btn-primary save_button ok_button">Update Rating</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+  </div>
+  
+<div
+  class="rubric_container rubric  "
+  id="default_rubric"
+  style="display: none;"
+  tabindex="0"
+>
+  <div class="screenreader-only"><h2>Rubric</h2></div>
+  <div class="rubric_title">
+    <div style="display: none;" class="links displaying pull-right">
+      <a
+        href="/courses/72921/rubrics/%7B%7B%20id%20%7D%7D"
+        class=" edit_rubric_link no-print no-hover"
+        style=""
+        title="Edit Rubric"
+        aria-label="Edit Rubric"
+        role="button"
+      ><i class="icon-edit standalone-icon"></i></a>
+      <a
+        href="https://canvas.northwestern.edu/search/rubrics?q="
+        class="find_rubric_link no-print no-hover"
+        style=""
+        title="Find Another Rubric"
+        aria-label="Find Another Rubric"
+        role="button"
+      ><i class="icon-search standalone-icon"></i></a>
+        <a
+          href="/courses/72921/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D"
+          class="delete_rubric_link no-print no-hover"
+          style=""
+          title="Delete Rubric"
+          aria-label="Delete Rubric"
+          role="button"
+        ><i class="icon-trash standalone-icon"></i></a>
+      <div style="display: none;">
+        <div class="use_for_grading">&nbsp;</div>
+        <div class="free_form_criterion_comments">&nbsp;</div>
+        <div class="hide_score_total">&nbsp;</div>
+        <div class="rubric_association_id">&nbsp;</div>
+        <div class="user_id">&nbsp;</div>
+        <div class="assessment_type"></div>
+        <a href="/courses/72921/rubric_associations/%7B%7B%20rubric_association_id%20%7D%7D/assessments/%7B%7B%20assessment_id%20%7D%7D" rel="nofollow" class="edit_assessment_link">&nbsp;</a>
+        <a href="/courses/72921/rubrics/%7B%7B%20rubric_id%20%7D%7D" class="edit_rubric_url">&nbsp;</a>
+          <a href="/courses/72921/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url">&nbsp;</a>
+      </div>
+    </div>
+    <div style="float: right; font-size: 0.8em; display: none;" class="links displaying locked">
+      <span style="">Can&#39;t change a rubric once you&#39;ve started using it.</span>
+        <a href="/courses/72921/rubric_associations/%7B%7B%20association_id%20%7D%7D" class="delete_rubric_url" style="display: none;">&nbsp;</a>
+    </div>
+
+    <div class="editing" style="float: right;">
+      <a href="https://canvas.northwestern.edu/search/rubrics?q=" class="find_rubric_link icon-search" style="" title="Find Existing Rubric">Find a Rubric</a>
+    </div>
+    <div class="editing" style="text-align: left">
+      <label for="rubric-title">Title:</label>
+      <input id="rubric-title" type="text" class="no-margin-bottom" name="title" value="Some Rubric" style="width: 200px;" maxlength="255" aria-label="Title:"/>
+      <a href="https://canvas.northwestern.edu/search/rubrics?q=" style="display: none;"><img alt="" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/find-6164443e2a.png" /> Find Rubric</a>
+    </div>
+    <div class="displaying">
+      <span class="title" tabindex="-1">Title</span>
+    </div>
+    <div class="has-assessments-warning" style="display: none;">
+      You&#39;ve already rated students with this rubric.  Any major changes could affect their assessment results.
+    </div>
+  </div>
+<table class="rubric_table">
+<caption>
+  <div class="screenreader-only">
+    <span class="title">Title</span>
+  </div>
+</caption>
+<thead>
+  <tr>
+    <th scope="col">Criteria</th>
+    <th scope="col">Ratings</th>
+    <th scope="col">Pts</th>
+  </tr>
+</thead>
+<tbody>
+  
+<tr id="criterion_blank" class="criterion blank  " style="display: none;">
+  <td class="criterion_description hover-container pad-box-micro">
+    <div class="container">
+      <div class="links editing">
+          <a href="#" class="edit_criterion_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit criterion description</span></a>
+        <a href="#" class="delete_criterion_link"><i class="icon-trash standalone-icon"></i><span class="screenreader-only">Delete criterion row</span></a>
+      </div>
+      <div class="description_content">
+        <span class="outcome_sr_content" aria-hidden="true">
+          <i class="learning_outcome_flag icon-outcomes" aria-hidden="true"></i>
+          <span class="screenreader-only">This criterion is linked to a Learning Outcome</span>
+        </span>
+        <span class="description description_title">Description of criterion</span>
+        <span class="learning_outcome_id" style="display: none;"></span>
+        <span class="criterion_id" style="display: none;"></span>
+          <div class="long_description small_description"></div>
+        <div style="display: none;" class="long_description_holder editing empty">
+          <a href="#" class="long_description_link hidden">view longer description</a>
+          <textarea class="long_description" aria-label="Long Description" style="display: none;"></textarea>
+        </div>
+        <div class="hide_when_learning_outcome hidden">
+          <div class="criterion_use_range_div editing">
+            <label>Range
+              <input type="checkbox" class="criterion_use_range" /></label>
+          </div>
+        </div>
+        <div class="threshold">
+          threshold:
+          <span class="mastery_points">5</span> pts
+        </div>
+      </div>
+
+    </div>
+  </td>
+  <td style="padding: 0;">
+      <table class="ratings" style=""><tr>
+          <td id="rating_blank"
+              class="rating edge_rating
+                
+                "
+          <div class="container">
+              <div class="editing links">
+                <a href="#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                <a href="#" class="delete_rating_link"><i class="icon-trash standalone-icon" ></i><span class="screenreader-only">Delete rating</span></a>
+              </div>
+              <div class="clear"></div>
+            <span class="nobr">
+              <span class="points">5</span>
+              <span class="range_rating" style="display: none;">to ><span class="min_points">0</span></span> pts
+            </span>
+            <div class="description rating_description_value">Full Marks</div>
+            <div class="rating_long_description small_description"></div>
+            <span class="rating_id" style="display: none;">blank</span>
+              <div class="editing links add_rating_link">
+                <a href="#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+              </div>
+          </div>
+          </td>
+          <td id="rating_blank_2"
+              class="rating edge_rating
+                infinitesimal
+                "
+          <div class="container">
+              <div class="editing links">
+                <a href="#" class="edit_rating_link"><i class="icon-edit standalone-icon"></i><span class="screenreader-only">Edit rating</span></a>
+                <a href="#" class="delete_rating_link"><i class="icon-trash standalone-icon" ></i><span class="screenreader-only">Delete rating</span></a>
+              </div>
+              <div class="clear"></div>
+            <span class="nobr">
+              <span class="points">0</span>
+              <span class="range_rating" style="display: none;">to ><span class="min_points">0</span></span> pts
+            </span>
+            <div class="description rating_description_value">No Marks</div>
+            <div class="rating_long_description small_description"></div>
+            <span class="rating_id" style="display: none;">blank_2</span>
+              <div class="editing links add_rating_link">
+                <a href="#" class="add_rating_link_after" aria-label="Add rating"><i class="icon-add icon-Solid"></i></a>
+              </div>
+          </div>
+          </td>
+      </tr></table>
+      <div style="display: none; font-style: italic; font-size: 0.8em; margin: 5px;" class="custom_ratings">
+        This area will be used by the assessor to leave comments related to this criterion.
+      </div>
+  </td>
+  <td class="nobr points_form">
+    <div class="editing" style="white-space: normal">
+      <span style="white-space: nowrap; font-size: 0.8em">
+          
+            <input
+              type="text"
+              aria-label="Points"
+              value="5"
+              class="criterion_points span1 no-margin-bottom"
+            />
+           pts
+      </span><br />
+    </div>
+    <div class="displaying">
+      <span style="white-space: nowrap;">
+        <span class="criterion_rating_points_holder" style="display: none;">
+          <span class="criterion_rating_points">&nbsp;</span> /
+        </span>
+        <span class="display_criterion_points">5</span> pts<br />
+      </span>
+    </div>
+    <div class="ignoring">
+      <span> -- </span>
+    </div>
+    <div class="criterion_comments">
+        <a href="#" class="no-hover criterion_comments_link" title="Additional Comments">
+          <img alt="Additional Comments" src="https://du11hjcvx0uqb.cloudfront.net/dist/images/rubric_comment-ddae8546ab.png" />
+        </a>
+        <div class="custom_rating" style="display: none;"></div>
+    </div>
+  </td>
+</tr>
+
+  <tr class="summary">
+    <td colspan="4">
+      <div class="total_points_holder" style="float: right; ">
+        <span>Total Points:
+            <span class="rubric_total">
+              5
+            </span>
+ <span class="assessing">out of 5</span>        </span>
+      </div>
+      <div class="editing pull-left">
+        <span id="add_criterion_holder" class="criterion_link"></span>
+      </div>
+      <div class="clear"></div>
+    </td>
+  </tr>
+</tbody>
+</table>
+</div>
+<table style="display: none;">
+  <tr id="edit_rubric">
+    <td colspan="4">
+      <form id="edit_rubric_form" class="edit-rubric-form no-margin-bottom">
+        <div class="rubric_custom_ratings" style="">
+          <input type="checkbox" id="rubric_custom_rating" class="rubric_custom_rating" />
+          <label for="rubric_custom_rating">I&#39;ll write free-form comments when assessing students</label>
+        </div>
+          <div class="rubric_grading" style="">
+            <input type="checkbox" id="grading_rubric" class="grading_rubric_checkbox" />
+            <label for="grading_rubric">Use this rubric for assignment grading</label>
+          </div>
+        <div class="totalling_rubric" style="">
+          <input type="checkbox" id="totalling_rubric" class="totalling_rubric_checkbox" />
+          <label for="totalling_rubric">Hide score total for assessment results</label>
+        </div>
+        <div class="ic-Action-header ic-Action-header--half-margin">
+          <div class="ic-Action-header__Primary">
+            <button type="button" class="Button cancel_button">Cancel</button>
+            <button type="submit" class="Button Button--primary save_button">Create Rubric</button>
+          </div>
+        </div>
+      </form>
+    </td>
+  </tr>
+</table>
+
+  
+
+
+          </div>
+        </div>
+        <div id="right-side-wrapper" class="ic-app-main-content__secondary">
+          <aside id="right-side" role="complementary">
+            
+<div id="sidebar_content">
+
+    
+<div class="details">
+  <h3>Submission</h3>
+    <div class="header">
+        <i class="icon-check" aria-hidden="true"></i>
+        Submitted!
+    </div>
+  <div class="content">
+    <span class="">
+        May 14 at  1:09pm
+    </span>
+
+    <div>
+      <a href="/courses/72921/assignments/461049/submissions/108872">
+        Submission Details
+      </a>
+    </div>
+
+        <div>
+          <a href="/courses/72921/assignments/461049/submissions/108872?download=5319326">
+            Download project2_ydi6174-1.zip
+          </a>
+        </div>
+
+    <div class="module">
+
+    </div>
+
+
+    <div class="comments module">
+        <p>You may not see all comments right now because the assignment is currently being graded.</p>
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+          </aside>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+    <div style="display:none;"><!-- Everything inside of this should always stay hidden -->
+        <div id="page_view_id">90b7a084-16f8-45ff-bc43-5d5e911538cb</div>
+    </div>
+  <div id='aria_alerts' class='hide-text affix' role="alert" aria-live="assertive"></div>
+  <div id='StudentTray__Container'></div>
+  
+
+<script>
+  INST = {"environment":"production","allowMediaComments":true,"kalturaSettings":{"domain":"nv.instructuremedia.com","resource_domain":"nv.instructuremedia.com","rtmp_domain":"fms-prod.instructuremedia.com","partner_id":"9","subpartner_id":"0","player_ui_conf":"0","kcw_ui_conf":"0","upload_ui_conf":"0","max_file_size_bytes":534773760,"do_analytics":false,"hide_rte_button":false,"js_uploader":true},"googleAnalyticsAccount":"UA-9138420-1","logPageViews":true,"maxVisibleEditorButtons":3,"editorButtons":[{"name":"Panopto","id":14491,"url":"https://northwestern.hosted.panopto.com/Panopto/Pages/Sessions/embeddedupload.aspx","icon_url":"https://northwestern.hosted.panopto.com/Panopto/images/panopto_logo_globe.png","canvas_icon_class":null,"width":900,"height":700},{"name":"Google Apps","id":18206,"url":"https://google-drive-lti-iad-prod.instructure.com/lti/rce-content-selection","icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png","canvas_icon_class":null,"width":700,"height":600}]};
+  ENV = {"ASSET_HOST":"https://du11hjcvx0uqb.cloudfront.net","active_brand_config_json_url":"https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/f0b03ebcc9d5705ce5d1cdd687f8bf5b/variables-750d72b9d3e5d522f965bf904110c132.json","url_to_what_gets_loaded_inside_the_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/f0b03ebcc9d5705ce5d1cdd687f8bf5b/variables-750d72b9d3e5d522f965bf904110c132.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_normal_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-53dac18d10.css"],"url_for_high_contrast_tinymce_editor_css":["https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/default/variables-high_contrast-750d72b9d3e5d522f965bf904110c132.css","https://du11hjcvx0uqb.cloudfront.net/dist/brandable_css/new_styles_high_contrast/bundles/what_gets_loaded_inside_the_tinymce_editor-b4d65fe883.css"],"current_user_id":"108872","current_user_roles":["user","student"],"current_user_disabled_inbox":false,"files_domain":"cluster28-files.instructure.com","DOMAIN_ROOT_ACCOUNT_ID":18760000000000001,"k12":false,"use_responsive_layout":false,"help_link_name":"Help","help_link_icon":"help","use_high_contrast":false,"LTI_LAUNCH_FRAME_ALLOWANCES":["geolocation *","microphone *","camera *","midi *","encrypted-media *"],"SETTINGS":{"open_registration":false,"eportfolios_enabled":true,"collapse_global_nav":false,"show_feedback_link":true,"enable_profiles":true},"current_user":{"id":"108872","display_name":"Yifei Deng","avatar_image_url":"https://canvas.northwestern.edu/images/thumbnails/4943389/wfRrgpCBVthYt0Pj230B0YMcXnkBT92nrPlUX1FI","html_url":"https://canvas.northwestern.edu/about/108872"},"page_view_update_url":"/page_views/90b7a084-16f8-45ff-bc43-5d5e911538cb?page_view_token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpIjoiOTBiN2EwODQtMTZmOC00NWZmLWJjNDMtNWQ1ZTkxMTUzOGNiIiwidSI6MTg3NjAwMDAwMDAxMDg4NzIsImMiOiIyMDE4LTA1LTE2VDAwOjQwOjA5Ljc4WiJ9.yHkolewcTtNEfd7JWHAFFfcwTgYmS6xf-hsZU3M_0JM","context_asset_string":"course_72921","ping_url":"https://canvas.northwestern.edu/api/v1/courses/72921/ping","TIMEZONE":"America/Chicago","CONTEXT_TIMEZONE":"America/Chicago","LOCALE":"en","BIGEASY_LOCALE":"en_US","FULLCALENDAR_LOCALE":"en","MOMENT_LOCALE":"en","RICH_CONTENT_SERVICE_ENABLED":true,"RICH_CONTENT_APP_HOST":"rich-content-iad.inscloudgate.net","RICH_CONTENT_CDN_HOST":"dvgcns7dz7zc.cloudfront.net/rce_service/versions/","RICH_CONTENT_SKIP_SIDEBAR":null,"JWT":"ZXlKaGJHY2lPaUprYVhJaUxDSmxibU1pT2lKQk1qVTJSME5OSW4wLi5rejNzVW9lSHF5VzMzbkxwLkRmZjA4WE1MWWhyenpRd01iMlNpRUx1R0VhbG5WN1lSejZQTEtUbThodlBBSV9fNTB0VkJrQlZLYnMtbkd3SzBhQVhXYjlSVi11cjl3UTZYNkJpSmlFNHpqRHZ6Zk9Help4a3BCRjZrcEtiV25YTjZad0RSNDllNlo3MExodXd5LWVUaTVrRXVaMzJJZjRZQWExZkxxM0hHaTVPeHlJTW8yUEo5bEVzWVc0eXhDWkc3WlZ1VmcyMUVHSmRULVNZQmhodTZ1TmdtMnlnUHRhb3VxVzNvcV9QaDhPQnE2d29FV3IwaVNWR0pIZHdvVGV1S2N1N2FhUS15dFd2LTUyUE0wLU1xZDFWcVJhc3pkdmVtYWl3Umo2VEp1WTBLWE52TTdSVXVBWXJlczZUdXhfcS14dUFTXzh0OC05TmxkOXFncC03WHNNRmhIWkVRT19YYk9vRWkxQi1LTFpxb01HVS1qMmhwSFY1dnpyNWMwdGtDTWJ1Nk9wLVdLWDhGenRjZ1pJaGNZMzB6SFdQTWUwVXd1QW56TWpLSml1ckd2cE5VbE1RMFNDTlZFR3B1RUxjMC10NVhUMXJraUthbEhXZk5ueTNYVk1MX2FYbHhUVlhuVENjb1hVLXF1YjB4UlVWNzJsMVhneVJlSWlFMl9fVjNpcEZfU1pXcGhhemk2X01kYnMxTGNkNWVIbjZ6X1FibWgxWVluZjR1c1YzQnhoc3J1WHF4V0o0OVpSM3Q2WXM4VFFSM1BqZGdSWFhvYklBSzRzcm96QncyVGcxU1lCLWpXVzM4UDhUcXVic2RrdkFEUW9HaFNuSEpFRUtKN2NZMDhGbWxfdmJ6emhtS3V3VE1IalRGVW1HUU9WZ1cyM3Y4MW1MclZKWkFSYnZFLUYzZEhGanBvbHpRYmhTLWQ4QmNxQUFtR3FMSkx5UW9BY3BiYXAzWmxDa3dCNTJBRFFpZ0tDcjYzaU1nYnVEYmFIN1R6LWY1anZGakRfeHdybnIxZVJDaUhmU2pSaWFaME9BOExEdURmT1EzRGZfMlNIZG1tYmFBTnF2SWZlMUpkZkRVMzdJelJyR2NNWklvMEY0LmNOMjNxTzFwaWk4Y2pIMzZ3YWlNeUE=","RICH_CONTENT_CAN_UPLOAD_FILES":false,"ROOT_OUTCOME_GROUP":{"id":"24482","title":"2018SP_EECS_340-0_SEC1 Introduction to Networking","vendor_guid":null,"url":"/api/v1/courses/72921/outcome_groups/24482","subgroups_url":"/api/v1/courses/72921/outcome_groups/24482/subgroups","outcomes_url":"/api/v1/courses/72921/outcome_groups/24482/outcomes","can_edit":false,"import_url":"/api/v1/courses/72921/outcome_groups/24482/import","context_id":"72921","context_type":"Course","description":null},"COURSE_ID":72921,"ASSIGNMENT_ID":461049,"EXTERNAL_TOOLS":[{"id":"18206","domain":"google-drive-lti-iad-prod.instructure.com","url":"https://google-drive-lti-iad-prod.instructure.com/lti/course-navigation","consumer_key":"f9aa2628-ca06-45d8-b9c0-5b4b6384d067","name":"Google Apps","description":"Allows you to pull in documents from Google Drive to Canvas","created_at":"2018-05-15T20:14:26Z","updated_at":"2018-05-15T20:14:26Z","privacy_level":"name_only","custom_fields":{"account_id":"$Canvas.account.id","assignment_title":"$Canvas.assignment.title","base_url":"$Canvas.api.baseUrl","collaboration_members_url":"$Canvas.api.collaborationMembers.url","domain":"$Canvas.api.domain","group_context_ids":"$Canvas.group.contextIds","masquerading_user_id":"$Canvas.masqueradingUser.userId","membership_service_url":"$ToolProxyBinding.memberships.url","previous_context_ids":"$Canvas.course.previousContextIds","previous_context_ids_recursive":"$Canvas.course.previousContextIds.recursive","time_zone":"$Person.address.timezone","user_id":"$Canvas.user.id"},"workflow_state":"name_only","vendor_help_link":null,"account_navigation":null,"similarity_detection":null,"assignment_menu":null,"assignment_selection":{"message_type":"ContentItemSelectionRequest","text":"Google Docs Cloud Assignment","url":"https://google-drive-lti-iad-prod.instructure.com/lti/cloud-template-selection","label":"Google Docs Cloud Assignment","selection_width":800,"selection_height":400,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png"},"collaboration":{"canvas_icon_class":"icon-lti","icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png","message_type":"ContentItemSelectionRequest","text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/collaboration-content-selection","label":"Google Drive","selection_width":800,"selection_height":400},"course_assignments_menu":null,"course_home_sub_navigation":null,"course_navigation":{"text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/course-navigation","label":"Google Drive","selection_width":800,"selection_height":400,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png"},"course_settings_sub_navigation":null,"discussion_topic_menu":null,"editor_button":{"icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":700,"url":"https://google-drive-lti-iad-prod.instructure.com/lti/rce-content-selection","label":"Google Apps"},"file_menu":null,"global_navigation":null,"homework_submission":{"canvas_icon_class":"icon-lti","icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png","message_type":"ContentItemSelectionRequest","text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/homework-content-selection","label":"Google Drive","selection_width":800,"selection_height":400},"link_selection":{"enabled":"true","message_type":"ContentItemSelectionRequest","selection_height":600,"selection_width":700,"text":"Google Drive","url":"https://google-drive-lti-iad-prod.instructure.com/lti/module-content-selection","label":"Google Drive","icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png"},"migration_selection":null,"module_menu":null,"post_grades":null,"quiz_menu":null,"resource_selection":null,"tool_configuration":null,"user_navigation":null,"wiki_page_menu":null,"icon_url":"https://google-drive-lti-iad-prod.instructure.com/assets/google_drive_icon-ba12a17e3e3d7f70f910b17f1b4c0500ff0298ad087a93a6c133ca623c40f0f8.png","not_selectable":false}],"EULA_URL":null,"SUBMIT_ASSIGNMENT":{"ALLOWED_EXTENSIONS":["tar.gz","tgz","zip"],"ID":461049,"GROUP_ID_FOR_USER":null},"badge_counts":{"submissions":0},"notices":[]};
+</script>
+
+<script src="https://du11hjcvx0uqb.cloudfront.net/dist/webpack-production/navigation_header.bundle-fb966b27e3.js" defer="defer"></script>
+<script src="https://instructure-uploads.s3.amazonaws.com/account_18760000000000001/attachments/4509625/canvasCustomNU_11_28_5.js" defer="defer"></script>
+
+</div> <!-- #application -->
+</body>
+</html>
